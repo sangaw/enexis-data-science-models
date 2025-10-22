@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+create/
+.the/
+
+# IDE/editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+!docs/**/*.ipynb
+
+# Data and artifacts
+src/data/**
+!src/data/.gitkeep
+workspaces/**
+!workspaces/**/README.md
+**/*.csv
+**/*.parquet
+**/*.feather
+**/*.h5
+**/*.hdf5
+**/*.npz
+**/*.npy
+**/*.xlsx
+**/*.xls
+**/*.xlsb
+**/*.xlsm
+**/*.sav
+**/*.dta
+**/*.arff
+**/*.jsonl
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+**/logs/**
+
+# Models and artifacts
+**/*.pkl
+**/*.joblib
+**/*.onnx
+**/*.pt
+**/*.pth
+**/model_run_results/**
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Local config
+*.env
+.env.*
+**/config.json
+**/experiment_config.yaml
+**/best_sarimax_params.json
+
+# Images (docs allowed)
+*.png
+*.jpg
+*.jpeg
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.jpeg
+
+# Cache
+**/.mypy_cache/
+**/.pytest_cache/
+**/.ruff_cache/
+**/.cache/

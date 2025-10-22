@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enexis"
+version = "0.1.0"
+description = "Enexis data science models and pipeline"
+readme = "docs/readme_MVP.md"
+requires-python = ">=3.9"
+license = { text = "Proprietary" }
+authors = [ { name = "Enexis Team" } ]
+dependencies = []
+
+[project.scripts]
+enexis = "src.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+exclude = ["tests*"]
